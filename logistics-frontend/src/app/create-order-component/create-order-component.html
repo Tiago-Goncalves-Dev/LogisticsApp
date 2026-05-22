@@ -1,0 +1,10 @@
+<p>Preenche o form!</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input class="border p-2 w-full mb-4" formControlName="customerId" />
+  <input class="border p-2 w-full mb-4" formControlName="deliveryType" />
+  <input class="border p-2 w-full mb-4" formControlName="weightKg" />
+  <button (click)="onSubmit()" class="border p-2 mb-4" type="submit" class="btn btn-default">
+    Submit
+  </button>
+</form>
